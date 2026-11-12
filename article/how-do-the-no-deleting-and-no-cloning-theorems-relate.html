@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Do the No-Deleting and No-Cloning Theorems Relate? - quantum-computing</title>
+    <meta name="description" content="This article explores the foundational relationship between the no-deleting theorem and the no-cloning theorem in quantum information theory. Together, these two principles establish the conservation of quantum information by proving that an arbitrary unk">
+    <link rel="canonical" href="https://salivity.github.io/quantum-computing/article/how-do-the-no-deleting-and-no-cloning-theorems-relate">
+    <link rel="search" type="application/opensearchdescription+xml" title="quantum-computing" href="/quantum-computing/opensearch.xml">
+    <link rel="icon" href="/quantum-computing/favicon.ico">
+    <link rel="stylesheet" href="/quantum-computing/css/style.css">
+    <link media="print" rel="stylesheet" href="/quantum-computing/css/print.css">
+    <script src="/quantum-computing/js/fuse.min.js"></script>
+    <script src="/quantum-computing/js/script.js"></script>
+    <script id="MathJax-script" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/4.1.3/tex-chtml.min.js" defer></script>
+    <script src="/monetize/monetize.js"></script>
+    <script src="/social/social.js"></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="How Do the No-Deleting and No-Cloning Theorems Relate? - quantum-computing" />
+    <meta property="og:url" content="https://salivity.github.io/quantum-computing/article/how-do-the-no-deleting-and-no-cloning-theorems-relate" />
+    <meta property="og:image" content="https://salivity.github.io/quantum-computing/images/open-graph/default.webp" />
+    <meta property="og:image:secure_url" content="https://salivity.github.io/quantum-computing/images/open-graph/default.webp" />
+    <meta property="og:image:width" content="1120" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:description" content="This article explores the foundational relationship between the no-deleting theorem and the no-cloning theorem in quantum information theory. Together, these two principles establish the conservation of quantum information by proving that an arbitrary unk" />
+    <link rel="manifest" href="/quantum-computing/pwa/manifest.json" />
+</head>
+<body>
+    <header>
+        <a href="/quantum-computing/" aria-label="Go To Home Page" title="Go To Home Page" id="logo">
+            <span>salivity.github.io/</span><span>quantum-computing</span>
+        </a>
+        <nav>
+            <ul class="header-links">
+                <li><a href="/quantum-computing/search" title="Search" aria-label="Go To Search Page"><svg class="svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"></path></svg></a></li>
+                <li><a id="theme-toggle" title="Theme" href="javascript:void(0);" aria-label="Toggle Website Theme"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+    <div class="article-layout">
+        <aside id="profile-sidebar" class="profile-column" aria-label="Author Profile"></aside>
+        <div class="article-main-column">
+            <article><h1 id="how-do-the-no-deleting-and-no-cloning-theorems-relate">How Do
+the No-Deleting and No-Cloning Theorems Relate?</h1>
+<p>This article explores the foundational relationship between the
+no-deleting theorem and the no-cloning theorem in quantum information
+theory. Together, these two principles establish the conservation of
+quantum information by proving that an arbitrary unknown quantum state
+can neither be duplicated nor destroyed in isolation. Understanding how
+these dual theorems complement one another reveals why quantum data
+behaves like a conserved physical quantity rather than classical digital
+bits, and how this symmetry governs quantum computing, memory
+management, and cryptography.</p>
+<p>In classical computing, copying and deleting data are routine
+operations performed billions of times per second. A classical bit
+exists in a definite state of either zero or one, allowing a processor
+to read its value without disturbance, replicate it across multiple
+memory registers, or overwrite it with zeros. Quantum mechanics operates
+under fundamentally different rules because a qubit can exist in a
+linear superposition of basis states. Measuring an unknown quantum state
+collapses its superposition, destroying the original coherent
+information before it can be duplicated or erased through classical
+observation.</p>
+<p>Formulated in 1982 by Wootters, Zurek, and Dieks, the no-cloning
+theorem proves that no unitary quantum operation can take an arbitrary
+unknown quantum state and a blank target qubit and transform them into
+two identical, independent copies of the original state. This
+restriction follows directly from the linearity of quantum mechanics. If
+a hypothetical cloning operator worked for basis states, applying it to
+a superposition of those states would produce an entangled state rather
+than a separable product of two identical copies. Only orthogonal states
+that are known to belong to a specific basis can be copied reliably.</p>
+<p>Nearly two decades later, in 2000, Arun Kumar Pati and Samuel L.
+Braunstein introduced the no-deleting theorem, which addresses the
+opposite process. Suppose a system already possesses two identical
+copies of an arbitrary unknown quantum state. The no-deleting theorem
+proves that there is no linear, isometric quantum operation capable of
+resetting one of those copies to a standard blank state while leaving
+the remaining copy intact and keeping the ancillary environment
+independent of the deleted state. While a known state can easily be
+rotated back to a reference state, an unknown state cannot simply be
+wiped out.</p>
+<p>The no-deleting theorem complements the no-cloning theorem as its
+time-reversed dual. In a closed quantum system, all state evolution is
+governed by unitary operators, which are mathematically reversible and
+preserve inner products between states. Cloning attempts to transform
+one copy and a blank state into two copies, whereas deleting attempts to
+transform two copies into one copy and a blank state. If a universal
+quantum deleter existed that did not leak information into an ancillary
+system, reversing its unitary dynamics would yield a universal quantum
+cloner. Even when allowing the ancillary state to change, linearity
+forces any valid deletion process to simply move the quantum state
+intact into the ancilla rather than destroying it.</p>
+<p>Together, these two theorems establish a profound conservation law
+for quantum information. Just as the first law of thermodynamics states
+that energy can neither be created nor destroyed in an isolated system,
+the combination of no-cloning and no-deleting demonstrates that unknown
+quantum information cannot be created from nothing or annihilated into
+nothing under unitary evolution. When a quantum state appears to be
+erased through environmental decoherence or resetting, the information
+is not destroyed; instead, as further formalized by the no-hiding
+theorem, it is transferred into the surrounding environment or into
+correlations across a larger composite system.</p>
+<p>This symmetry has direct practical consequences for quantum algorithm
+design and hardware engineering. Because quantum programmers cannot
+simply delete temporary working qubits at the end of a subroutine
+without leaving the main register entangled with the discarded qubits,
+they must rely on uncomputation. Uncomputation runs reversible gate
+sequences backward to disentangle ancillary qubits and return them
+cleanly to their initial blank state. In quantum cryptography and
+distributed quantum networks, the inability to either clone or silently
+delete unknown states guarantees that an eavesdropper cannot copy
+transmitted qubits or erase evidence of interception without introducing
+detectable errors.</p></article>
+        <div id='disqus_thread'></div>
+        <script>
+
+            var disqus_config = function () {
+                this.page.url =         'https://salivity.github.io/quantum-computing/article/how-do-the-no-deleting-and-no-cloning-theorems-relate';  
+                //this.page.identifier =  PAGE_IDENTIFIER; 
+            };
+            
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://salivity-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    
+        </div>
+    </div>
+    
+    </main>
+    <footer>
+        <nav>
+            <ul class="social-links">
+            </ul>
+        </nav>
+        <nav>
+            <ul class="footer-links">
+                <li><a href="https://smvc.dev/contact">Contact</a></li>
+                <li><a href="/quantum-computing/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/quantum-computing/terms-and-conditions">Terms and Conditions</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            Copyright &copy; <span id="current-year"></span>
+        </div>
+    </footer>
+</body>
+</html>

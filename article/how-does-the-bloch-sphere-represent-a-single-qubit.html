@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Does the Bloch Sphere Represent a Single Qubit? - quantum-computing</title>
+    <meta name="description" content="The Bloch sphere is a three-dimensional geometric model used in quantum computing to visualize the state of a single quantum bit, or qubit. By mapping complex probability amplitudes onto the surface and interior of a unit sphere, the Bloch sphere translat">
+    <link rel="canonical" href="https://salivity.github.io/quantum-computing/article/how-does-the-bloch-sphere-represent-a-single-qubit">
+    <link rel="search" type="application/opensearchdescription+xml" title="quantum-computing" href="/quantum-computing/opensearch.xml">
+    <link rel="icon" href="/quantum-computing/favicon.ico">
+    <link rel="stylesheet" href="/quantum-computing/css/style.css">
+    <link media="print" rel="stylesheet" href="/quantum-computing/css/print.css">
+    <script src="/quantum-computing/js/fuse.min.js"></script>
+    <script src="/quantum-computing/js/script.js"></script>
+    <script id="MathJax-script" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/4.1.3/tex-chtml.min.js" defer></script>
+    <script src="/monetize/monetize.js"></script>
+    <script src="/social/social.js"></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="How Does the Bloch Sphere Represent a Single Qubit? - quantum-computing" />
+    <meta property="og:url" content="https://salivity.github.io/quantum-computing/article/how-does-the-bloch-sphere-represent-a-single-qubit" />
+    <meta property="og:image" content="https://salivity.github.io/quantum-computing/images/open-graph/default.webp" />
+    <meta property="og:image:secure_url" content="https://salivity.github.io/quantum-computing/images/open-graph/default.webp" />
+    <meta property="og:image:width" content="1120" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:description" content="The Bloch sphere is a three-dimensional geometric model used in quantum computing to visualize the state of a single quantum bit, or qubit. By mapping complex probability amplitudes onto the surface and interior of a unit sphere, the Bloch sphere translat" />
+    <link rel="manifest" href="/quantum-computing/pwa/manifest.json" />
+</head>
+<body>
+    <header>
+        <a href="/quantum-computing/" aria-label="Go To Home Page" title="Go To Home Page" id="logo">
+            <span>salivity.github.io/</span><span>quantum-computing</span>
+        </a>
+        <nav>
+            <ul class="header-links">
+                <li><a href="/quantum-computing/search" title="Search" aria-label="Go To Search Page"><svg class="svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"></path></svg></a></li>
+                <li><a id="theme-toggle" title="Theme" href="javascript:void(0);" aria-label="Toggle Website Theme"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+    <div class="article-layout">
+        <aside id="profile-sidebar" class="profile-column" aria-label="Author Profile"></aside>
+        <div class="article-main-column">
+            <article><h1 id="how-does-the-bloch-sphere-represent-a-single-qubit">How Does the
+Bloch Sphere Represent a Single Qubit?</h1>
+<p>The Bloch sphere is a three-dimensional geometric model used in
+quantum computing to visualize the state of a single quantum bit, or
+qubit. By mapping complex probability amplitudes onto the surface and
+interior of a unit sphere, the Bloch sphere translates abstract linear
+algebra into intuitive spatial coordinates. This article explains how a
+qubit state is mathematically parameterized using polar and azimuthal
+angles, how pure and mixed states correspond to specific locations on or
+inside the sphere, and how single-qubit quantum logic gates operate as
+geometric rotations around the coordinate axes.</p>
+<p>In classical computing, a bit can only exist in one of two discrete
+states, 0 or 1. A quantum bit, however, can exist in a linear
+superposition of two orthonormal basis states, commonly denoted as
+|0&gt; and |1&gt;. Mathematically, a pure single-qubit state |psi&gt; is
+written as alpha|0&gt; + beta|1&gt;, where alpha and beta are complex
+numbers satisfying the normalization condition |alpha|^2 + |beta|^2 = 1.
+Because alpha and beta are complex, they initially appear to require
+four real parameters. However, the normalization constraint reduces this
+by one degree of freedom, and the physical irrelevance of a global phase
+factor removes another. As a result, any pure single-qubit state can be
+uniquely described by just two real numbers, which naturally correspond
+to two angles on the surface of a unit sphere.</p>
+<p>To place a qubit state onto the Bloch sphere, the state vector is
+parameterized as |psi&gt; = cos(theta/2)|0&gt; +
+e^(i<em>phi)</em>sin(theta/2)|1&gt;. In this representation, theta is
+the polar angle measured down from the positive z-axis, ranging from 0
+to pi radians, and phi is the azimuthal angle measured counterclockwise
+from the positive x-axis in the xy-plane, ranging from 0 to 2*pi
+radians. Using the half-angle theta/2 is essential because orthogonal
+quantum states, which have an inner product of zero in Hilbert space,
+are mapped to antipodal points situated 180 degrees apart on the Bloch
+sphere. Specifically, when theta = 0, the state is |0&gt;, located at
+the north pole (0, 0, 1). When theta = pi, the state is |1&gt;, located
+at the south pole (0, 0, -1).</p>
+<p>Every point on the surface of the Bloch sphere corresponds to a valid
+pure state, with the three Cartesian axes representing fundamental basis
+states. While the z-axis captures the computational basis states |0&gt;
+and |1&gt;, the equator of the sphere (where theta = pi/2) represents
+equal superpositions of |0&gt; and |1&gt; that differ only in their
+relative phase phi. Along the x-axis, phi = 0 yields the |+&gt; state at
+(1, 0, 0), and phi = pi yields the |-&gt; state at (-1, 0, 0).
+Similarly, along the y-axis, phi = pi/2 produces the |+i&gt; state at
+(0, 1, 0), while phi = 3*pi/2 produces the |-i&gt; state at (0, -1, 0).
+The latitude on the sphere therefore determines the measurement
+probabilities of obtaining 0 or 1 in the computational basis, whereas
+the longitude encodes the relative quantum phase between the two basis
+components.</p>
+<p>The coordinates of a state on the Bloch sphere are represented by the
+Bloch vector, a three-dimensional real vector r =
+(sin(theta)<em>cos(phi), sin(theta)</em>sin(phi), cos(theta)). For any
+pure quantum state, the Bloch vector has a unit length of |r| = 1,
+meaning the vector terminates directly on the outer surface of the
+sphere. When a qubit interacts with its environment through decoherence
+or becomes entangled with other qubits, it can no longer be described as
+a single pure state vector and must instead be represented by a density
+matrix rho = (I + r_x<em>X + r_y</em>Y + r_z*Z) / 2, where I is the
+identity matrix and X, Y, and Z are the Pauli matrices. For these mixed
+states, the Bloch vector has a length strictly less than one (|r| &lt;
+1) and lies inside the interior of the sphere, with the center of the
+sphere (0, 0, 0) representing the maximally mixed state of complete
+uncertainty.</p>
+<p>Beyond visualizing static states, the Bloch sphere provides a clear
+geometric interpretation of single-qubit quantum operations and
+measurements. Because unitary operations preserve the norm of a quantum
+state, any single-qubit quantum logic gate corresponds to a rigid
+rotation of the Bloch vector around a specific axis on the sphere. For
+example, the Pauli-X, Pauli-Y, and Pauli-Z gates execute 180-degree
+(pi-radian) rotations around the x, y, and z axes, respectively. The
+Hadamard gate performs a 180-degree rotation around the diagonal axis
+halfway between the x and z axes, swapping the x-axis and z-axis bases
+and transforming |0&gt; into |+&gt;. Finally, a projective measurement
+along any axis projects the Bloch vector onto one of the two antipodal
+poles of that axis, with the probability of each outcome determined by
+the vertical distance of the state point along the measurement axis.</p></article>
+        <div id='disqus_thread'></div>
+        <script>
+
+            var disqus_config = function () {
+                this.page.url =         'https://salivity.github.io/quantum-computing/article/how-does-the-bloch-sphere-represent-a-single-qubit';  
+                //this.page.identifier =  PAGE_IDENTIFIER; 
+            };
+            
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://salivity-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    
+        </div>
+    </div>
+    
+    </main>
+    <footer>
+        <nav>
+            <ul class="social-links">
+            </ul>
+        </nav>
+        <nav>
+            <ul class="footer-links">
+                <li><a href="https://smvc.dev/contact">Contact</a></li>
+                <li><a href="/quantum-computing/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/quantum-computing/terms-and-conditions">Terms and Conditions</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            Copyright &copy; <span id="current-year"></span>
+        </div>
+    </footer>
+</body>
+</html>

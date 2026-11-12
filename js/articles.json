@@ -1,0 +1,62 @@
+[
+  [
+    10,
+    "Why Is Decoherence a Major Obstacle in Quantum Computing?",
+    "Environmental decoherence is one of the greatest obstacles to practical quantum computing because it destroys the fragile quantum states that give quantum processors their computational power. This article explores how stray interactions with the surround",
+    false
+  ],
+  [
+    9,
+    "How Does the Bloch Sphere Represent a Single Qubit?",
+    "The Bloch sphere is a three-dimensional geometric model used in quantum computing to visualize the state of a single quantum bit, or qubit. By mapping complex probability amplitudes onto the surface and interior of a unit sphere, the Bloch sphere translat",
+    false
+  ],
+  [
+    8,
+    "Why Is a Hilbert Space Used to Model Quantum States?",
+    "A complex Hilbert space is used to mathematically model state vectors in quantum computing because its structure naturally captures superposition, phase interference, measurement probabilities, and unitary evolution. This article explores how vector space",
+    false
+  ],
+  [
+    7,
+    "How Do the No-Deleting and No-Cloning Theorems Relate?",
+    "This article explores the foundational relationship between the no-deleting theorem and the no-cloning theorem in quantum information theory. Together, these two principles establish the conservation of quantum information by proving that an arbitrary unk",
+    false
+  ],
+  [
+    6,
+    "Why Does the No-Cloning Theorem Prevent Copying Qubits?",
+    "The no-cloning theorem is a foundational principle of quantum mechanics that forbids the creation of an identical, independent copy of an arbitrary, unknown quantum state. Unlike classical bits, which can be read and duplicated endlessly without altering",
+    false
+  ],
+  [
+    5,
+    "How Does the Born Rule Predict Quantum Measurements?",
+    "The Born rule is the fundamental postulate of quantum mechanics that links the mathematical description of a quantum state to the concrete probabilities of measurement outcomes. In quantum computing, it explains how the complex probability amplitudes of a",
+    false
+  ],
+  [
+    4,
+    "Why Does Measuring a Qubit Collapse the Wavefunction?",
+    "Measuring a quantum state in quantum computing forces a qubit out of superposition and into a definite classical bit of 0 or 1 because the measurement device physically interacts with the quantum system. This article explores how quantum superposition wor",
+    false
+  ],
+  [
+    3,
+    "How Does Quantum Interference Amplify Correct Answers?",
+    "Quantum interference is the fundamental mechanism that allows quantum algorithms to extract meaningful solutions from vast superpositions of possibilities. This article explores how quantum states behave like waves with both amplitude and phase, how quant",
+    false
+  ],
+  [
+    2,
+    "How Does Quantum Entanglement Scale Quantum Computing?",
+    "Quantum entanglement is the fundamental physical resource that allows quantum computers to achieve exponential scaling in computational power compared to classical systems. While superposition enables individual quantum bits, or qubits, to exist in linear",
+    false
+  ],
+  [
+    1,
+    "How Do Qubits Use Superposition for Multiple States?",
+    "Superposition is a fundamental principle of quantum mechanics that allows a quantum bit, or qubit, to exist in a linear combination of both zero and one states at the same time. Unlike classical bits that must be strictly zero or one at any given instant,",
+    false
+  ]
+]

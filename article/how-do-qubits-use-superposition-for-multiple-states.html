@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Do Qubits Use Superposition for Multiple States? - quantum-computing</title>
+    <meta name="description" content="Superposition is a fundamental principle of quantum mechanics that allows a quantum bit, or qubit, to exist in a linear combination of both zero and one states at the same time. Unlike classical bits that must be strictly zero or one at any given instant,">
+    <link rel="canonical" href="https://salivity.github.io/quantum-computing/article/how-do-qubits-use-superposition-for-multiple-states">
+    <link rel="search" type="application/opensearchdescription+xml" title="quantum-computing" href="/quantum-computing/opensearch.xml">
+    <link rel="icon" href="/quantum-computing/favicon.ico">
+    <link rel="stylesheet" href="/quantum-computing/css/style.css">
+    <link media="print" rel="stylesheet" href="/quantum-computing/css/print.css">
+    <script src="/quantum-computing/js/fuse.min.js"></script>
+    <script src="/quantum-computing/js/script.js"></script>
+    <script id="MathJax-script" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/4.1.3/tex-chtml.min.js" defer></script>
+    <script src="/monetize/monetize.js"></script>
+    <script src="/social/social.js"></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="How Do Qubits Use Superposition for Multiple States? - quantum-computing" />
+    <meta property="og:url" content="https://salivity.github.io/quantum-computing/article/how-do-qubits-use-superposition-for-multiple-states" />
+    <meta property="og:image" content="https://salivity.github.io/quantum-computing/images/open-graph/default.webp" />
+    <meta property="og:image:secure_url" content="https://salivity.github.io/quantum-computing/images/open-graph/default.webp" />
+    <meta property="og:image:width" content="1120" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:description" content="Superposition is a fundamental principle of quantum mechanics that allows a quantum bit, or qubit, to exist in a linear combination of both zero and one states at the same time. Unlike classical bits that must be strictly zero or one at any given instant," />
+    <link rel="manifest" href="/quantum-computing/pwa/manifest.json" />
+</head>
+<body>
+    <header>
+        <a href="/quantum-computing/" aria-label="Go To Home Page" title="Go To Home Page" id="logo">
+            <span>salivity.github.io/</span><span>quantum-computing</span>
+        </a>
+        <nav>
+            <ul class="header-links">
+                <li><a href="/quantum-computing/search" title="Search" aria-label="Go To Search Page"><svg class="svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"></path></svg></a></li>
+                <li><a id="theme-toggle" title="Theme" href="javascript:void(0);" aria-label="Toggle Website Theme"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+    <div class="article-layout">
+        <aside id="profile-sidebar" class="profile-column" aria-label="Author Profile"></aside>
+        <div class="article-main-column">
+            <article><h1 id="how-do-qubits-use-superposition-for-multiple-states">How Do
+Qubits Use Superposition for Multiple States?</h1>
+<p>Superposition is a fundamental principle of quantum mechanics that
+allows a quantum bit, or qubit, to exist in a linear combination of both
+zero and one states at the same time. Unlike classical bits that must be
+strictly zero or one at any given instant, a qubit leverages wave-like
+probability amplitudes to hold multiple state possibilities
+simultaneously until a measurement forces it into a single definite
+value. This overview explores the physical mechanics, mathematical
+foundations, and computational advantages of quantum superposition.</p>
+<p>In classical computing, information is processed and stored using
+binary bits, which are physical systems such as transistors that exist
+in one of two distinct voltage levels representing zero or one. A qubit,
+by contrast, is built from a quantum system such as the spin of an
+electron, the polarization of a photon, or the energy levels of a
+superconducting circuit. Because subatomic systems obey the laws of
+quantum mechanics rather than classical physics, they exhibit
+wave-particle duality. Just as two sound waves or water waves can
+overlap to form a combined wave pattern, the quantum states representing
+zero and one can overlap and interfere with each other to form a
+coherent composite state known as a superposition.</p>
+<p>Mathematically, the state of a qubit is described as a vector in a
+two-dimensional complex vector space. The two basis states, written in
+Dirac notation as ket 0 and ket 1, correspond to the classical states of
+zero and one. When a qubit is in superposition, its state is expressed
+as alpha times ket 0 plus beta times ket 1, where alpha and beta are
+complex numbers called probability amplitudes. The squares of the
+magnitudes of alpha and beta represent the probabilities that the qubit
+will be measured as zero or one, respectively, and these two
+probabilities must always sum to one.</p>
+<p>A helpful way to visualize how a qubit holds these continuous
+combinations is the Bloch sphere, a geometric representation where ket 0
+sits at the north pole and ket 1 sits at the south pole. While a
+classical bit can only occupy one of the two poles, a qubit's state
+vector can point to any location on the surface of the sphere. The
+latitude of the point determines the relative probability of measuring
+zero or one, while the longitude represents the relative phase between
+the two states. This relative phase is crucial because it governs how
+different quantum states interfere with one another during quantum gate
+operations.</p>
+<p>To place a qubit into superposition, quantum computers apply
+precisely calibrated physical pulses, such as microwave radiation or
+laser beams, to execute a quantum logic operation called a Hadamard
+gate. Starting from a basis state of ket 0, the Hadamard gate rotates
+the qubit's state vector halfway between the poles to the equator of the
+Bloch sphere, creating an equal superposition where zero and one each
+have a fifty percent probability of being observed upon measurement.
+While the qubit remains isolated from environmental noise, it maintains
+this coherent state, allowing further quantum gates to manipulate both
+components of the superposition in a single step.</p>
+<p>The computational power of superposition becomes especially
+pronounced when multiple qubits are combined and entangled. Whereas a
+classical register of three bits can hold only one of eight possible
+three-bit combinations at any moment, a three-qubit quantum register in
+superposition can represent all eight combinations simultaneously. In
+general, a system of n qubits can exist in a superposition of two to the
+power of n states at once. Quantum algorithms exploit this massive state
+space by using constructive interference to amplify the probability
+amplitudes of correct answers and destructive interference to cancel out
+incorrect ones before a final measurement collapses the qubits into a
+classical result.</p></article>
+        <div id='disqus_thread'></div>
+        <script>
+
+            var disqus_config = function () {
+                this.page.url =         'https://salivity.github.io/quantum-computing/article/how-do-qubits-use-superposition-for-multiple-states';  
+                //this.page.identifier =  PAGE_IDENTIFIER; 
+            };
+            
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://salivity-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    
+        </div>
+    </div>
+    
+    </main>
+    <footer>
+        <nav>
+            <ul class="social-links">
+            </ul>
+        </nav>
+        <nav>
+            <ul class="footer-links">
+                <li><a href="https://smvc.dev/contact">Contact</a></li>
+                <li><a href="/quantum-computing/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/quantum-computing/terms-and-conditions">Terms and Conditions</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            Copyright &copy; <span id="current-year"></span>
+        </div>
+    </footer>
+</body>
+</html>
